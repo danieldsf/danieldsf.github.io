@@ -1,3 +1,5 @@
+import services from "../../lib/config/services";
+
 export default function Services() {
     return (
         <section id="services" className="services">
@@ -9,12 +11,18 @@ export default function Services() {
             </div>
 
             <div className="row">
-              <div className="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-                <div className="icon"><i className="icofont-computer"></i></div>
-                <h4 className="title"><a href="">Lorem Ipsum</a></h4>
-                <p className="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-              </div>
-              <div className="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+              { services.map((service, index) => {
+                return (
+                  <div key={index} className="col-lg-4 col-md-6 icon-box" data-aos={ service.delay }>
+                    <div className="icon"><i className={ service.icon }></i></div>
+                    <h4 className="title"><a href="">{ service.title }</a></h4>
+                    <p className="description">{ service.content }</p>
+                  </div>
+                )  
+              }) }
+              
+
+              {/* <div className="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                 <div className="icon"><i className="icofont-chart-bar-graph"></i></div>
                 <h4 className="title"><a href="">Dolor Sitema</a></h4>
                 <p className="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
@@ -38,7 +46,7 @@ export default function Services() {
                 <div className="icon"><i className="icofont-tasks-alt"></i></div>
                 <h4 className="title"><a href="">Eiusmod Tempor</a></h4>
                 <p className="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-              </div>
+              </div> */}
             </div>
 
           </div>
