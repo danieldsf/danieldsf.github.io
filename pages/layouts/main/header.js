@@ -1,6 +1,11 @@
 import person from "./../../../lib/config/personalInfo";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function Header() {
+  
+  const router = useRouter();
+
   return (
     <header id="header">
       <div className="d-flex flex-column">
@@ -11,7 +16,8 @@ export default function Header() {
             className="img-fluid rounded-circle"
           />
           <h1 className="text-light">
-            <a href="">{person.name}</a>
+            {/* <a href=""></a> */}
+            <Link href="/">{person.name}</Link>
           </h1>
           <div className="social-links mt-3 text-center">
             {/* <a href="#" className="gmail">

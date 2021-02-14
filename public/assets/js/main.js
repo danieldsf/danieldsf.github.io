@@ -1,3 +1,4 @@
+
 /**
  * Template Name: iPortfolio - v1.5.1
  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -6,7 +7,7 @@
  */
 !(function ($) {
   "use strict";
-
+  //import $ from 'jquery';
   // Hero typed
   if ($(".typed").length) {
     var typed_strings = $(".typed").data("typed-items");
@@ -71,8 +72,9 @@
         );
       }
     }
-
-    startMap();
+    
+    if(document.getElementById('mapid'))
+      startMap();
   });
 
   function startMap() {

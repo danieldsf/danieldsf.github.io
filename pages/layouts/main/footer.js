@@ -1,4 +1,4 @@
-import person from "./../../../lib/config/personalInfo";
+import person from "../../../lib/config/personalInfo";
 
 export default function Footer() {
   return (
