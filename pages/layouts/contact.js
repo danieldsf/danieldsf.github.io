@@ -1,4 +1,9 @@
 import person from "./../../lib/config/personalInfo";
+import axios from 'axios';
+
+function sendMessage(){
+  console.log(axios);
+}
 
 export default function Contact() {
   return (
@@ -44,8 +49,8 @@ export default function Contact() {
 
           <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
             <form
-              action="forms/contact.php"
-              method="post"
+              // action="forms/contact.php"
+              // method="post"
               role="form"
               className="php-email-form"
             >
@@ -106,7 +111,9 @@ export default function Contact() {
                 </div>
               </div>
               <div className="text-center">
-                <button type="submit">Send Message</button>
+                <button type="submit" onClick={() => {
+                  return sendMessage()
+                }}>Send Message</button>
               </div>
             </form>
           </div>

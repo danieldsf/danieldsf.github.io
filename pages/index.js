@@ -1,4 +1,11 @@
 import Head from 'next/head'
+// CSS:
+import 'bootstrap/dist/css/bootstrap.css';
+import 'leaflet/dist/leaflet.css';
+import 'venobox/venobox/venobox.css';
+import 'aos/dist/aos.css';
+import 'sweetalert2/dist/sweetalert2.css';
+//
 import Facts from './layouts/facts';
 import Resume from './layouts/resume';
 import Skills from './layouts/skills';
@@ -8,6 +15,7 @@ import Portfolio from './layouts/portfolio';
 import Services from './layouts/services';
 import Contact from './layouts/contact';
 import Header from './layouts/partials/header';
+
 
 export default function Home() {
   
@@ -28,20 +36,21 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
 
         {/* <!-- Vendor CSS Files --> */}
-        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        {/* <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" /> */}
         <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
         <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-        <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+        {/* <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" /> */}
         <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
-        <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+        {/* <link href="assets/vendor/aos/aos.css" rel="stylesheet" /> */}
 
         {/* <!-- Template Main CSS File --> */}
         <link href="assets/css/style.css" rel="stylesheet" />
                 
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossOrigin=""/>
+        {/* <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossOrigin=""/> */}
+
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossOrigin=""></script>
         <script src="assets/js/fix.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
       </Head>
 
       <button type="button" className="mobile-nav-toggle d-xl-none"><i className="icofont-navigation-menu"></i></button>
