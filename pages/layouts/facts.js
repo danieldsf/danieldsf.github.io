@@ -1,3 +1,5 @@
+import facts from "./../../lib/config/facts";
+
 export default function Facts() {
   return (
     <section id="facts" className="facts">
@@ -12,21 +14,29 @@ export default function Facts() {
           </p>
         </div>
 
-        <div className="row no-gutters">
-          <div
-            className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch"
-            data-aos="fade-up"
-          >
-            <div className="count-box">
-              <i className="icofont-simple-smile"></i>
-              <span data-toggle="counter-up">232</span>
-              <p>
-                <strong>Happy Clients</strong> consequuntur quae
-              </p>
-            </div>
-          </div>
+        <div className="row no-gutters" >
+          { 
+            facts.map((fact, index) => {
+              return (
+                <div
+                  className="col-lg-4 col-md-6 d-md-flex align-items-md-stretch"
+                  data-aos="fade-up"
+                  key={index}
+                >
+                  <div className="count-box">
+                    <i className={ fact.icon }></i>
+                    <span data-toggle="counter-up">{ fact.number }</span>
+                    <p>
+                      <strong>{ fact.title }</strong>
+                    </p>
+                  </div>
+                </div>
+              )
+            })
+          }
+          
 
-          <div
+          {/* <div
             className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch"
             data-aos="fade-up"
             data-aos-delay="100"
@@ -38,9 +48,9 @@ export default function Facts() {
                 <strong>Projects</strong> adipisci atque cum quia aut
               </p>
             </div>
-          </div>
+          </div> */}
 
-          <div
+          {/* <div
             className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch"
             data-aos="fade-up"
             data-aos-delay="200"
@@ -52,9 +62,9 @@ export default function Facts() {
                 <strong>Hours Of Support</strong> aut commodi quaerat
               </p>
             </div>
-          </div>
+          </div> */}
 
-          <div
+          {/* <div
             className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch"
             data-aos="fade-up"
             data-aos-delay="300"
@@ -66,7 +76,7 @@ export default function Facts() {
                 <strong>Hard Workers</strong> rerum asperiores dolor
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -1,14 +1,13 @@
 import Head from 'next/head'
-import Facts from './src/layouts/facts';
-import Resume from './src/layouts/resume';
-import Skills from './src/layouts/skills';
-import Footer from './src/layouts/footer';
-import About from './src/layouts/about';
-import Portfolio from './src/layouts/portfolio';
-import Services from './src/layouts/services';
-import Contact from './src/layouts/contact';
-import Testimonials from './src/layouts/testimonials';
-import Header from './src/layouts/header';
+import Facts from './layouts/facts';
+import Resume from './layouts/resume';
+import Skills from './layouts/skills';
+import Footer from './layouts/partials/footer';
+import About from './layouts/about';
+import Portfolio from './layouts/portfolio';
+import Services from './layouts/services';
+import Contact from './layouts/contact';
+import Header from './layouts/partials/header';
 
 export default function Home() {
   
@@ -16,7 +15,7 @@ export default function Home() {
     <div className="ng-container">
       <Head>
         {/* <link rel="icon" href="/favicon.ico" /> */}
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta content="" name="description" />
         <meta content="" name="keywords" />
@@ -39,8 +38,8 @@ export default function Home() {
         {/* <!-- Template Main CSS File --> */}
         <link href="assets/css/style.css" rel="stylesheet" />
                 
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
-        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossOrigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossOrigin=""></script>
         <script src="assets/js/fix.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
       </Head>
@@ -82,8 +81,6 @@ export default function Home() {
       <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
       <script src="assets/vendor/typed.js/typed.min.js"></script>
       <script src="assets/vendor/aos/aos.js"></script>
-      
-
       <script src="assets/js/main.js"></script>
     </div>
   )
